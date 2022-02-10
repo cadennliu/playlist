@@ -1,23 +1,52 @@
 // Complete Day 1 goals here
 
-let songNames = ["Crazy Over You", "The Feels", "LOCO", "Pirate"];
-let songArtists = ["Blackpink", "Twice", "ITZY", "Everglow"];
-let songImages = [
-  "https://i.scdn.co/image/ab67616d0000b2731895052324f123becdd0d53d",
-  "https://upload.wikimedia.org/wikipedia/en/5/50/Twice_-_The_Feels.png",
-  "https://i.scdn.co/image/ab67616d0000b2737cba267dc81d036a71f46a3a",
-  "https://images.genius.com/a98c2abb455970e01e3440ba43df03bf.1000x1000x1.png",
+let songNames = [
+  "The Coconut Nut (Da Coconut Nut)",
+  "It's a Beautiful Day in the Neighborhood!",
+  "S.I.M.P. (Squirrels in My Pants)",
+  "Bop!",
 ];
-let songLengths = ["2:42", "3:18", "3:11", "3:30"];
-let aongLinks = [
-  "https://open.spotify.com/track/4yOqfpzmL4FvmXJTUgAMUP?si=b6e90d00caab4abe",
-  "https://open.spotify.com/track/1XyzcGhmO7iUamSS94XfqY?si=960a647b85844411",
-  "https://open.spotify.com/track/5b8FtevTVz8xVF6E208xeV?si=986c5adfbf5f4b62",
-  "https://open.spotify.com/track/0Vu5tjvXZX3qtzRiezxLi1?si=4b93693b180d4253",
+
+let songArtists = [
+  "Dliaa-Life",
+  "Tiger's Neighborhood",
+  "2 Guys n the Parque",
+  "Jojo Siwa",
+];
+
+let songImages = [
+  "https://i.ytimg.com/vi/w0AOGeqOnFY/mqdefault.jpg",
+  "https://cms-tc.pbskids.org/daniel-tiger-website/Music-Thumbs/song-beautiful-day.png",
+  "https://images-na.ssl-images-amazon.com/images/I/715vqnGHASL._RI_.jpg",
+  "https://artwork-cdn.7static.com/static/img/sleeveart/00/090/371/0009037154_350.jpg",
+];
+
+let songLengths = ["1:18", "1:06", "1:34", "2:37"];
+
+let songLinks = [
+  "https://open.spotify.com/track/6V22NX6XrCjdyqXYfobudw?si=db6e3f1251254125",
+  "https://open.spotify.com/track/7LsFEbIWg9256P4AErwjS8?si=6726c651099f4647",
+  "https://open.spotify.com/track/76Wrq73y3Ef7VNM4CGSZ0l?si=258fc42215a74f8f",
+  "https://open.spotify.com/track/0mDH8XQRpQUGkXXZzYAyu0?si=84b56d28de334ba1",
 ];
 
 function displaySongInfo() {
   // Complete the Day 2 goals inside this function
+  songNames.forEach(function (names) {
+    $(".songs").append(`<p>${names}</p>`);
+  });
+  songArtists.forEach(function (artists) {
+    $(".artists").append(`<p>${artists}</p>`);
+  });
+  songImages.forEach(function (images) {
+    $(".images").append(`<p>${images}</p>`);
+  });
+  songLengths.forEach(function (lengths) {
+    $(".lengths").append(`<p>${lengths}</p>`);
+  });
+  songLinks.forEach(function (links) {
+    $(".links").append(`<p>${links}</p>`);
+  });
 }
 
 function emptySongInfo() {
