@@ -11,7 +11,7 @@ let songNames = [
 
 let songArtists = [
   "Dliaa-Life",
-  "Tiger's Neighborhood",
+  "Daniel Tiger's Neighborhood",
   "2 Guys n the Parque",
   "Jojo Siwa",
   "Nick Bean",
@@ -40,6 +40,7 @@ let songLinks = [
 
 function displaySongInfo() {
   // Complete the Day 2 goals inside this function
+  
   songNames.forEach(function (names) {
     $(".songs").append(`<p>${names}</p>`);
   });
@@ -62,6 +63,7 @@ function emptySongInfo() {
   clicked so that your playlist does not repeatedly add the data
   too many times. Try commenting out this function call to see 
   what happens without it! */
+  
   $(".songs").empty();
   $(".images").empty();
   $(".artists").empty();
@@ -71,9 +73,25 @@ function emptySongInfo() {
 
 function addSongInfo() {
   // Complete Day 3 goals inside this function
+  
+  let newSongName = $(".title").val();
+  songNames.push(newSongName);
+  
+  let newSongArtists = $(".artist").val();
+  songArtists.push(newSongArtists);
+
+  let newSongImages = $(".image").val();
+  songImages.push(newSongImages);
+  
+  let newSongLengths = $(".length").val();
+  songLengths.push(newSongLengths);
+
+  let newSongLinks = $(".link").val();
+  songLinks.push(newSongLinks);
+  
 }
 
-$("#add").click(function () {
+$(".add").click(function () {
   emptySongInfo();
   addSongInfo();
   displaySongInfo();
