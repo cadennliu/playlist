@@ -41,20 +41,24 @@ let songLinks = [
 function displaySongInfo() {
   // Complete the Day 2 goals inside this function
   
-  songNames.forEach(function (names) {
-    $(".songs").append(`<p>${names}</p>`);
+  songNames.forEach(function (name) {
+    $(".songs").append(`<p>${name}</p>`);
   });
-  songArtists.forEach(function (artists) {
-    $(".artists").append(`<p>${artists}</p>`);
+  
+  songArtists.forEach(function (artist) {
+    $(".artists").append(`<p>${artist}</p>`);
   });
-  songImages.forEach(function (images) {
-    $(".images").append(`<img src="{images}">`);
+  
+  songImages.forEach(function (image) {
+    $(".images").append(`<img src=${image}>`);
   });
-  songLengths.forEach(function (lengths) {
-    $(".lengths").append(`<p>${lengths}</p>`);
+  
+  songLengths.forEach(function (length) {
+    $(".lengths").append(`<p>${length}</p>`);
   });
-  songLinks.forEach(function (links) {
-    $(".links").append(`<a>Listen!</a>`);
+  
+  songLinks.forEach(function (link) {
+    $(".links").append(`<a>${link}Listen!</a>`);
   });
 }
 
