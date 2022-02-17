@@ -58,7 +58,7 @@ function displaySongInfo() {
   });
   
   songLinks.forEach(function (link) {
-    $(".links").append(`<a>${link}Listen!</a>`);
+    $(".links").append(`<a href=${link}>Listen!</a>`);
   });
 }
 
