@@ -63,15 +63,15 @@ In this unit, coders will create a Playlist. The Playlist will display a list of
 
 #### Wrap
 
-- [ ] Push your changes!
+- [x] Push your changes!
 
 ## Day 4
 
 ### Day 4 Goal 1: Refactor your arrays so all your song information is stored in Objects
 
-- [ ] Comment out your arrays
-- [ ] Create an Object for each of your songs
-- [ ] Inside each Object, add key/value pairs to store the title, artist,image, and link
+- [x] Comment out your arrays
+- [x] Create an Object for each of your songs
+- [x] Inside each Object, add key/value pairs to store the title, artist,image, and link
 - [ ] Store all your Objects in one array
 
 #### Wrap
