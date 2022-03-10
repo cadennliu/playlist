@@ -15,31 +15,38 @@ let theCoconutNut = {
   songArtist: "Dliaa-Life",
   songImage: "https://i.ytimg.com/vi/w0AOGeqOnFY/mqdefault.jpg",
   songLength: "1:18",
-  songLink: "https://open.spotify.com/track/6V22NX6XrCjdyqXYfobudw?si=db6e3f1251254125",
+  songLink:
+    "https://open.spotify.com/track/6V22NX6XrCjdyqXYfobudw?si=db6e3f1251254125",
 };
 
 let danielTiger = {
   songName: "It's a Beautiful Day in the Neighborhood!",
   songArtist: "Daniel Tiger's Neighborhood",
-  songImage: "https://cms-tc.pbskids.org/daniel-tiger-website/Music-Thumbs/song-beautiful-day.png",
+  songImage:
+    "https://cms-tc.pbskids.org/daniel-tiger-website/Music-Thumbs/song-beautiful-day.png",
   songLength: "1:06",
-  songLink: "https://open.spotify.com/track/7LsFEbIWg9256P4AErwjS8?si=6726c651099f4647",
+  songLink:
+    "https://open.spotify.com/track/7LsFEbIWg9256P4AErwjS8?si=6726c651099f4647",
 };
 
 let simp = {
   songName: "S.I.M.P. (Squirrels in My Pants)",
   songArtist: "2 Guys n the Parque",
-  songImage: "https://images-na.ssl-images-amazon.com/images/I/715vqnGHASL._RI_.jpg",
+  songImage:
+    "https://images-na.ssl-images-amazon.com/images/I/715vqnGHASL._RI_.jpg",
   songLength: "1:34",
-  songLink: "https://open.spotify.com/track/76Wrq73y3Ef7VNM4CGSZ0l?si=258fc42215a74f8f",
+  songLink:
+    "https://open.spotify.com/track/76Wrq73y3Ef7VNM4CGSZ0l?si=258fc42215a74f8f",
 };
 
 let bop = {
   songName: "Bop!",
   songArtist: "Jojo Siwa",
-  songImage: "https://artwork-cdn.7static.com/static/img/sleeveart/00/090/371/0009037154_350.jpg",
+  songImage:
+    "https://artwork-cdn.7static.com/static/img/sleeveart/00/090/371/0009037154_350.jpg",
   songLength: "2:37",
-  songLink: "https://open.spotify.com/track/0mDH8XQRpQUGkXXZzYAyu0?si=84b56d28de334ba1",
+  songLink:
+    "https://open.spotify.com/track/0mDH8XQRpQUGkXXZzYAyu0?si=84b56d28de334ba1",
 };
 
 let chickenNuggies = {
@@ -47,7 +54,8 @@ let chickenNuggies = {
   songArtist: "2 Guys n the Parque",
   songImage: "https://m.media-amazon.com/images/I/810snbzcVPL._SS500_.jpg",
   songLength: "2:35",
-  songLink: "https://open.spotify.com/track/6iSpyAN4PjyCnxcJthU4Jl?si=0189891f15da4a08",
+  songLink:
+    "https://open.spotify.com/track/6iSpyAN4PjyCnxcJthU4Jl?si=0189891f15da4a08",
 };
 
 let elsa = {
@@ -55,7 +63,8 @@ let elsa = {
   songArtist: "Idina Menzel",
   songImage: "https://macacaosapao.files.wordpress.com/2014/05/let-it-go.png",
   songLength: "3:44",
-  songLink: "https://open.spotify.com/track/0qcr5FMsEO85NAQjrlDRKo?si=16500a8fa95b4350",
+  songLink:
+    "https://open.spotify.com/track/0qcr5FMsEO85NAQjrlDRKo?si=16500a8fa95b4350",
 };
 
 let songs = [theCoconutNut, danielTiger, simp, bop, chickenNuggies, elsa];
@@ -99,9 +108,14 @@ function addSongInfo() {
     songArtist: newSongArtist,
     songImage: newSongImage,
     songLength: newSongLength,
-    songLink: newSongLink
+    songLink: newSongLink,
   };
-  
+
+  songs.new = newSong;
+
+  console.log("this is the new song", songs);
+
+  songs.push(newSong);
 }
 
 $(".add").click(function () {
