@@ -50,8 +50,8 @@ let bop = {
 };
 
 let chickenNuggies = {
-  songName: "S.I.M.P. (Squirrels in My Pants)",
-  songArtist: "2 Guys n the Parque",
+  songName: "Chicken Nugget Song",
+  songArtist: "Nick Bean",
   songImage: "https://m.media-amazon.com/images/I/810snbzcVPL._SS500_.jpg",
   songLength: "2:35",
   songLink:
