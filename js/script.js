@@ -77,7 +77,7 @@ function displaySongInfo() {
     $(".artists").append(`<p>${song.songArtist}</p>`);
     $(".images").append(`<img src=${song.songImage}>`);
     $(".lengths").append(`<p>${song.songLength}</p>`);
-    $(".links").append(`<a href=${song.songLink}>Listen!</a>`);
+    $(".links").append(`<a href=${song.songLink}>Listen !</a>`);
   });
 }
 
@@ -122,6 +122,7 @@ $(".add").click(function () {
   emptySongInfo();
   addSongInfo();
   displaySongInfo();
+  
 });
 
 displaySongInfo();
